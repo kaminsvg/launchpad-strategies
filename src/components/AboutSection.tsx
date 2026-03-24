@@ -6,13 +6,13 @@ const cofounders = [
     title: "Co-Founder",
     linkedin: "https://www.linkedin.com/in/karanamin",
     expertise: [
-      "Corporate Development",
-      "Finance Strategy",
-      "Cost Optimization",
+      "Strategic Sourcing",
       "Supply Chain Management",
+      "Cost Optimization",
+      "Vendor & Partner Strategy",
     ],
-    companies: ["Bain & Company", "Verkada", "Zoox (Amazon)"],
-    bio: "Karan brings deep expertise in corporate development and finance strategy, with experience at Bain & Company, Verkada, and Zoox (Amazon). He specializes in helping companies optimize cost structures, navigate M&A, and build scalable financial operations from the ground up.",
+    companies: ["Zoox", "Google", "Lyft", "Mastercard"],
+    bio: "Karan is a seasoned supply chain and sourcing strategist with leadership roles at Zoox, Google, Lyft, and Mastercard. He has driven $75M+ in cost reductions, negotiated 50+ partner agreements, and launched category-defining procurement strategies — from Zoox's first rideshare app to Google's Fitbit integration and Lyft's GTM acceleration. He holds an MBA from Rutgers Business School specializing in Supply Chain Management.",
   },
   {
     name: "Manuj Arora",
