@@ -15,17 +15,18 @@ const cofounders = [
     bio: "Karan brings deep expertise in corporate development and finance strategy, with experience at Bain & Company, Verkada, and Zoox (Amazon). He specializes in helping companies optimize cost structures, navigate M&A, and build scalable financial operations from the ground up.",
   },
   {
-    name: "Manu Jarora",
+    name: "Manuj Arora",
     title: "Co-Founder",
     linkedin: "https://www.linkedin.com/in/manujarora",
     expertise: [
-      "Pricing Strategy",
-      "Go-to-Market Strategy",
-      "Business Strategy",
-      "Product Scaling",
+      "People Strategy & Analytics",
+      "Management Consulting",
+      "Financial Planning",
+      "Operations Research",
     ],
-    companies: ["Google", "Lyft", "Mastercard"],
-    bio: "Manu is a seasoned strategist with a track record at Google, Lyft, and Mastercard. He specializes in pricing strategy, go-to-market execution, and scaling tech products from -1 to launch and beyond.",
+    companies: ["Verkada", "Bain & Company", "L.E.K. Consulting", "Oak Hill Advisors"],
+    education: "MBA, UCLA Anderson · MS Operations Research, Columbia University",
+    bio: "Manuj is a versatile strategist with experience spanning management consulting, finance, and people strategy. From Bain & Company to Verkada, he drives profitable growth by tackling the most pressing business questions with analytical rigor — backed by an MBA from UCLA Anderson and an MS in Operations Research from Columbia.",
   },
 ];
 
