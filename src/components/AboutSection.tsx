@@ -60,24 +60,34 @@ const AboutSection = () => {
               key={person.name}
               className="border border-primary-foreground/10 rounded-2xl p-8 bg-primary-foreground/5 backdrop-blur-sm"
             >
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h3 className="font-display text-2xl font-medium text-primary-foreground">
-                    {person.name}
-                  </h3>
-                  <p className="font-body text-sm text-accent mt-1">
-                    {person.title}
-                  </p>
+              <div className="flex items-start gap-4 mb-6">
+                <img
+                  src={photos[person.name]}
+                  alt={person.name}
+                  loading="lazy"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 rounded-full object-cover border-2 border-accent/30 shrink-0"
+                />
+                <div className="flex-1 flex items-start justify-between">
+                  <div>
+                    <h3 className="font-display text-2xl font-medium text-primary-foreground">
+                      {person.name}
+                    </h3>
+                    <p className="font-body text-sm text-accent mt-1">
+                      {person.title}
+                    </p>
+                  </div>
+                  <a
+                    href={person.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-foreground/40 hover:text-accent transition-colors"
+                    title={`${person.name} on LinkedIn`}
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
                 </div>
-                <a
-                  href={person.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-foreground/40 hover:text-accent transition-colors"
-                  title={`${person.name} on LinkedIn`}
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
               </div>
 
               <p className="font-body text-sm text-primary-foreground/70 leading-relaxed mb-6">
