@@ -1,10 +1,14 @@
 import { Linkedin } from "lucide-react";
-import karanPhoto from "@/assets/karan-amin.jpg";
-import manujPhoto from "@/assets/manuj-arora.jpg";
 
-const photos: Record<string, string> = {
-  "Karan Amin": karanPhoto,
-  "Manuj Arora": manujPhoto,
+const companyLogos: Record<string, string> = {
+  "Zoox": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Zoox_logo.svg/1200px-Zoox_logo.svg.png",
+  "Google": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png",
+  "Lyft": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lyft_logo.svg/1200px-Lyft_logo.svg.png",
+  "Mastercard": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png",
+  "Verkada": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Verkada_Logo.svg/1200px-Verkada_Logo.svg.png",
+  "Bain & Company": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bain_and_Company_Logo_1.svg/1280px-Bain_and_Company_Logo_1.svg.png",
+  "L.E.K. Consulting": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/L.E.K._Consulting_logo.svg/1200px-L.E.K._Consulting_logo.svg.png",
+  "Oak Hill Advisors": "",
 };
 
 const cofounders = [
@@ -60,34 +64,24 @@ const AboutSection = () => {
               key={person.name}
               className="border border-primary-foreground/10 rounded-2xl p-8 bg-primary-foreground/5 backdrop-blur-sm"
             >
-              <div className="flex items-start gap-4 mb-6">
-                <img
-                  src={photos[person.name]}
-                  alt={person.name}
-                  loading="lazy"
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 rounded-full object-cover border-2 border-accent/30 shrink-0"
-                />
-                <div className="flex-1 flex items-start justify-between">
-                  <div>
-                    <h3 className="font-display text-2xl font-medium text-primary-foreground">
-                      {person.name}
-                    </h3>
-                    <p className="font-body text-sm text-accent mt-1">
-                      {person.title}
-                    </p>
-                  </div>
-                  <a
-                    href={person.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary-foreground/40 hover:text-accent transition-colors"
-                    title={`${person.name} on LinkedIn`}
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="font-display text-2xl font-medium text-primary-foreground">
+                    {person.name}
+                  </h3>
+                  <p className="font-body text-sm text-accent mt-1">
+                    {person.title}
+                  </p>
                 </div>
+                <a
+                  href={person.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/40 hover:text-accent transition-colors"
+                  title={`${person.name} on LinkedIn`}
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
               </div>
 
               <p className="font-body text-sm text-primary-foreground/70 leading-relaxed mb-6">
@@ -98,15 +92,26 @@ const AboutSection = () => {
                 <p className="font-body text-xs tracking-[0.15em] uppercase text-primary-foreground/40 mb-3">
                   Companies
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {person.companies.map((company) => (
-                    <span
-                      key={company}
-                      className="font-body text-xs px-3 py-1 rounded-full border border-accent/30 text-accent/80"
-                    >
-                      {company}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap items-center gap-4">
+                  {person.companies.map((company) => {
+                    const logo = companyLogos[company];
+                    return logo ? (
+                      <img
+                        key={company}
+                        src={logo}
+                        alt={company}
+                        loading="lazy"
+                        className="h-5 w-auto object-contain brightness-0 invert opacity-60"
+                      />
+                    ) : (
+                      <span
+                        key={company}
+                        className="font-body text-xs px-3 py-1 rounded-full border border-accent/30 text-accent/80"
+                      >
+                        {company}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
 
