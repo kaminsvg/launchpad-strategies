@@ -1,4 +1,11 @@
 import { Linkedin } from "lucide-react";
+import karanPhoto from "@/assets/karan-amin.jpg";
+import manujPhoto from "@/assets/manuj-arora.jpg";
+
+const photos: Record<string, string> = {
+  "Karan Amin": karanPhoto,
+  "Manuj Arora": manujPhoto,
+};
 
 const cofounders = [
   {
