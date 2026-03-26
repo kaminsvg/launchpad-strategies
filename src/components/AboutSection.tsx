@@ -24,7 +24,7 @@ const cofounders = [
       "Vendor Strategy",
     ],
     companies: ["Zoox", "Google", "Lyft", "Mastercard"],
-    bio: "Karan has spent 15+ years in sourcing, operations, and vendor strategy at Zoox, Google, Lyft, and Mastercard. He's driven $75M+ in cost reductions, negotiated 50+ partner agreements, and built procurement functions from scratch. He knows where startups waste money — and how to stop it.",
+    bio: "Karan has spent 15+ years in scaling products and business, operational efficinecny, and supply chain strategy. Companies he has worked in include Zoox, Google, Lyft, and Mastercard. He's driven $100+ in cost reductions and built operational functions from scratch. He knows where startups waste money — and how to stop it.",
   },
   {
     name: "Manuj Arora",
@@ -44,9 +44,8 @@ const cofounders = [
 const thinkingPoints = [
   "Ship the smallest thing that proves you're right. Everything else is a distraction.",
   "Architecture should serve your next 6 months, not your 5-year fantasy.",
-  "Most startups don't have a tech problem. They have a prioritization problem.",
-  "The best engineering teams are small, focused, and unblocked. Not large and busy.",
-  "If your vendor bill is growing faster than your revenue, something is structurally wrong.",
+  "The best engineering teams are small, focused, and unblocked.",
+  "If your vendor bill keeps climbing but revenue isn’t keeping up, it’s time to look under the hood.",
 ];
 
 const AboutSection = () => {
@@ -61,7 +60,7 @@ const AboutSection = () => {
         </h2>
         <p className="font-body text-base text-primary-foreground/70 leading-relaxed mb-16 text-center max-w-2xl mx-auto">
           We're not a consultancy or an agency. We're two people who've spent years inside 
-          high-growth companies making the same decisions you're facing now. We advise — we don't execute.
+          high-growth companies making the same decisions you're facing now. We stay focused on the decisions that matter.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
