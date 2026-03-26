@@ -1,7 +1,9 @@
+import bainLogo from "@/assets/bain-logo.svg";
+
 const companies = [
   {
     name: "Bain & Company",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bain_and_Company_Logo_1.svg/1280px-Bain_and_Company_Logo_1.svg.png",
+    logo: bainLogo,
     url: "https://www.bain.com",
   },
   {

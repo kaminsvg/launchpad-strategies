@@ -6,7 +6,7 @@ const companyLogos: Record<string, string> = {
   "Lyft": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lyft_logo.svg/1200px-Lyft_logo.svg.png",
   "Mastercard": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png",
   "Verkada": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Verkada_Logo.svg/1200px-Verkada_Logo.svg.png",
-  "Bain & Company": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bain_and_Company_Logo_1.svg/1280px-Bain_and_Company_Logo_1.svg.png",
+  "Bain & Company": bainLogo,
   "L.E.K. Consulting": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/L.E.K._Consulting_logo.svg/1200px-L.E.K._Consulting_logo.svg.png",
   "Oak Hill Advisors": "",
 };
