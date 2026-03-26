@@ -19,27 +19,34 @@ const cofounders = [
     linkedin: "https://www.linkedin.com/in/karanamin",
     expertise: [
       "Strategic Sourcing",
-      "Supply Chain Management",
+      "Supply Chain & Operations",
       "Cost Optimization",
-      "Vendor & Partner Strategy",
+      "Vendor Strategy",
     ],
     companies: ["Zoox", "Google", "Lyft", "Mastercard"],
-    bio: "Karan is a seasoned supply chain and sourcing strategist with leadership roles at Zoox, Google, Lyft, and Mastercard. He has driven $75M+ in cost reductions, negotiated 50+ partner agreements, and launched category-defining procurement strategies — from Zoox's first rideshare app to Google's Fitbit integration and Lyft's GTM acceleration. He holds an MBA from Rutgers Business School specializing in Supply Chain Management.",
+    bio: "Karan has spent 15+ years in sourcing, operations, and vendor strategy at Zoox, Google, Lyft, and Mastercard. He's driven $75M+ in cost reductions, negotiated 50+ partner agreements, and built procurement functions from scratch. He knows where startups waste money — and how to stop it.",
   },
   {
     name: "Manuj Arora",
     title: "Co-Founder",
     linkedin: "https://www.linkedin.com/in/manujarora",
     expertise: [
-      "People Strategy & Analytics",
+      "Strategy & Analytics",
       "Management Consulting",
       "Financial Planning",
       "Operations Research",
     ],
     companies: ["Verkada", "Bain & Company", "L.E.K. Consulting", "Oak Hill Advisors"],
-    education: "MBA, UCLA Anderson · MS Operations Research, Columbia University",
-    bio: "Manuj is a versatile strategist with experience spanning management consulting, finance, and people strategy. From Bain & Company to Verkada, he drives profitable growth by tackling the most pressing business questions with analytical rigor — backed by an MBA from UCLA Anderson and an MS in Operations Research from Columbia.",
+    bio: "Manuj has worked across Bain & Company, L.E.K., and Verkada — tackling growth strategy, org design, and operational efficiency. He brings analytical rigor from an MBA at UCLA Anderson and an MS in Operations Research from Columbia. He thinks in frameworks and speaks in plain English.",
   },
+];
+
+const thinkingPoints = [
+  "Ship the smallest thing that proves you're right. Everything else is a distraction.",
+  "Architecture should serve your next 6 months, not your 5-year fantasy.",
+  "Most startups don't have a tech problem. They have a prioritization problem.",
+  "The best engineering teams are small, focused, and unblocked. Not large and busy.",
+  "If your vendor bill is growing faster than your revenue, something is structurally wrong.",
 ];
 
 const AboutSection = () => {
@@ -47,16 +54,14 @@ const AboutSection = () => {
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-primary">
       <div className="max-w-5xl mx-auto">
         <p className="font-body text-xs tracking-[0.25em] uppercase text-accent mb-4 text-center">
-          About Us
+          Who we are
         </p>
         <h2 className="font-display text-3xl md:text-4xl font-medium text-primary-foreground mb-4 text-center">
-          Strategy grounded in{" "}
-          <span className="italic">real execution.</span>
+          Two operators, not a firm.
         </h2>
         <p className="font-body text-base text-primary-foreground/70 leading-relaxed mb-16 text-center max-w-2xl mx-auto">
-          Together, we bring a rare blend of strategic rigor and operational
-          depth across pricing, corporate development, finance, and
-          go-to-market — from -1 to launch and beyond.
+          We're not a consultancy or an agency. We're two people who've spent years inside 
+          high-growth companies making the same decisions you're facing now. We advise — we don't execute.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -135,22 +140,26 @@ const AboutSection = () => {
           ))}
         </div>
 
-        {/* Shared metrics */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-12 border-t border-primary-foreground/10">
-          {[
-            { metric: "6+", label: "Companies scaled from concept to market" },
-            { metric: "10+", label: "Years combined in tech strategy & ops" },
-            { metric: "$B+", label: "Revenue impacted across engagements" },
-          ].map((item) => (
-            <div key={item.label} className="text-center">
-              <p className="font-display text-3xl md:text-4xl font-medium text-accent">
-                {item.metric}
-              </p>
-              <p className="font-body text-sm text-primary-foreground/50 mt-2">
-                {item.label}
-              </p>
-            </div>
-          ))}
+        {/* How we think */}
+        <div className="mt-20 pt-16 border-t border-primary-foreground/10">
+          <p className="font-body text-xs tracking-[0.25em] uppercase text-accent mb-4 text-center">
+            How we think
+          </p>
+          <h3 className="font-display text-2xl md:text-3xl font-medium text-primary-foreground mb-10 text-center">
+            A few things we believe.
+          </h3>
+          <div className="max-w-2xl mx-auto space-y-6">
+            {thinkingPoints.map((point, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <span className="font-display text-accent text-lg font-medium mt-0.5 shrink-0">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <p className="font-body text-sm text-primary-foreground/70 leading-relaxed">
+                  {point}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

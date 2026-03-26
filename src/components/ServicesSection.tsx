@@ -1,60 +1,58 @@
-import { TrendingUp, Target, DollarSign, BarChart3, Truck, Briefcase } from "lucide-react";
+import { AlertTriangle, Layers, Code2, Users, Eye } from "lucide-react";
 
-const services = [
+const situations = [
   {
-    icon: DollarSign,
-    title: "Pricing Strategy",
-    description: "Data-driven pricing models that maximize revenue and market positioning.",
+    icon: AlertTriangle,
+    title: "MVP breaking at scale",
+    description: "You built fast to prove the concept. Now traffic is growing and things are falling apart. We help you figure out what to fix first — without a full rewrite.",
   },
   {
-    icon: TrendingUp,
-    title: "Go-to-Market Strategy",
-    description: "Launch plans that align product, distribution, and messaging for impact.",
+    icon: Layers,
+    title: "Overbuilding too early",
+    description: "Your team is building infrastructure for problems you don't have yet. We help you strip back to what actually matters right now.",
   },
   {
-    icon: BarChart3,
-    title: "Cost Optimization",
-    description: "Identify inefficiencies and build scalable cost structures.",
+    icon: Code2,
+    title: "Unclear tech stack decisions",
+    description: "You're getting conflicting advice on frameworks, platforms, and vendors. We cut through the noise with a clear-eyed recommendation.",
   },
   {
-    icon: Briefcase,
-    title: "Corporate Development",
-    description: "M&A strategy, partnerships, and organizational structuring.",
+    icon: Users,
+    title: "Inefficient use of engineering resources",
+    description: "Dev costs are climbing but velocity isn't. We audit how your team spends its time and where the leaks are.",
   },
   {
-    icon: Target,
-    title: "Business Strategy",
-    description: "End-to-end strategic planning from vision through execution.",
-  },
-  {
-    icon: Truck,
-    title: "Supply Chain Management",
-    description: "Optimize operations and logistics for reliability and scale.",
+    icon: Eye,
+    title: "Need a second opinion before committing",
+    description: "You're about to make a big bet — new platform, major hire, vendor contract. We give you an honest read before you sign.",
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 px-6 md:px-12 lg:px-24">
+    <section id="situations" className="py-24 px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <p className="font-body text-xs tracking-[0.25em] uppercase text-accent mb-4">
-          What I do
+          Where we come in
         </p>
-        <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-16">
-          Areas of Expertise
+        <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-6">
+          Where we usually get called in
         </h2>
+        <p className="font-body text-base text-muted-foreground mb-16 max-w-2xl leading-relaxed">
+          Most founders reach out when something feels off — a decision that's too big to get wrong, or a problem that's too expensive to ignore.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
+          {situations.map((situation) => (
             <div
-              key={service.title}
+              key={situation.title}
               className="group p-6 rounded-sm border border-border hover:border-accent/50 hover:bg-card transition-all duration-300"
             >
-              <service.icon className="w-5 h-5 text-accent mb-4" />
+              <situation.icon className="w-5 h-5 text-accent mb-4" />
               <h3 className="font-display text-lg font-medium text-foreground mb-2">
-                {service.title}
+                {situation.title}
               </h3>
               <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                {service.description}
+                {situation.description}
               </p>
             </div>
           ))}
