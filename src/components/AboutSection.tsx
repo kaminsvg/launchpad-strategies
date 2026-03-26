@@ -1,15 +1,18 @@
 import { Linkedin } from "lucide-react";
 import bainLogo from "@/assets/bain-logo.svg";
 
+import bainLogo from "@/assets/bain-logo.svg";
+
 const companyLogos: Record<string, string> = {
-  "Zoox": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Zoox_logo.svg/1200px-Zoox_logo.svg.png",
-  "Google": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png",
-  "Lyft": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lyft_logo.svg/1200px-Lyft_logo.svg.png",
-  "Mastercard": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png",
-  "Verkada": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Verkada_Logo.svg/1200px-Verkada_Logo.svg.png",
+  Zoox: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Zoox_logo.svg",
+  Google: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+  Lyft: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyft_logo.svg",
+  Mastercard: "https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg",
+  Verkada: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Verkada_Logo.svg",
   "Bain & Company": bainLogo,
-  "L.E.K. Consulting": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/L.E.K._Consulting_logo.svg/1200px-L.E.K._Consulting_logo.svg.png",
-  "Oak Hill Advisors": "",
+  "L.E.K. Consulting": "https://upload.wikimedia.org/wikipedia/commons/5/51/L.E.K._Consulting_logo.svg",
+  "Oak Hill Advisors": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Oak_Hill_Advisors_logo.svg",
+
 };
 
 const cofounders = [
