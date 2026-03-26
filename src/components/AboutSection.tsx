@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import bainLogo from "@/assets/bain-logo.svg";
 
 const companyLogos: Record<string, string> = {
   "Zoox": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Zoox_logo.svg/1200px-Zoox_logo.svg.png",
