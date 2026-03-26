@@ -38,7 +38,7 @@ const LogoBar = () => {
     <section className="border-y border-border py-12 px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <p className="font-body text-xs tracking-[0.25em] uppercase text-muted-foreground mb-8 text-center">
-          Experience across industry leaders
+          We've worked inside these companies
         </p>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
           {companies.map((company) => (
