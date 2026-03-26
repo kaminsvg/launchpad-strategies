@@ -1,8 +1,6 @@
 import { Linkedin } from "lucide-react";
 import bainLogo from "@/assets/bain-logo.svg";
 
-import bainLogo from "@/assets/bain-logo.svg";
-
 const companyLogos: Record<string, string> = {
   Zoox: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Zoox_logo.svg",
   Google: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
@@ -12,9 +10,9 @@ const companyLogos: Record<string, string> = {
   "Bain & Company": bainLogo,
   "L.E.K. Consulting": "https://upload.wikimedia.org/wikipedia/commons/5/51/L.E.K._Consulting_logo.svg",
   "Oak Hill Advisors": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Oak_Hill_Advisors_logo.svg",
-
 };
 
+export default companyLogos;
 const cofounders = [
   {
     name: "Karan Amin",
