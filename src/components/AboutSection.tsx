@@ -34,7 +34,7 @@ const cofounders = [
       "Strategy & Analytics",
       "Management Consulting",
       "Financial Planning",
-      "Operations Research",
+      "Operations Strategy",
     ],
     companies: ["Verkada", "Bain & Company", "L.E.K. Consulting", "Oak Hill Advisors"],
     bio: "Manuj has worked across Bain & Company, L.E.K., and Verkada — tackling growth strategy, org design, and operational efficiency. He brings analytical rigor from an MBA at UCLA Anderson and an MS in Operations Research from Columbia. He thinks in frameworks and speaks in plain English.",
